@@ -78,8 +78,8 @@ const isDevelopment = true;
 /*------------paths to JS files------------*/
 let moduleJs = [
 	'app/scripts/common/test1.js',
-	'app/scripts/common/test2.js'
-	// 'app/scripts/common/battleship.js'
+	'app/scripts/common/test2.js',
+	'app/scripts/common/battleship.js'
 ];
 
 /*****************************------------JS and CSS libraries------------*****************************/
