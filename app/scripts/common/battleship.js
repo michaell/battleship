@@ -1,19 +1,19 @@
-var randomLoc = Math.floor(Math.random() * 5);
+let randomLoc = Math.floor(Math.random() * 5);
 
-var location1 = randomLoc;
+let location1 = randomLoc;
 console.log(randomLoc);
-var location2 = randomLoc + 1;
-var location3 = randomLoc + 2;
+let location2 = randomLoc + 1;
+let location3 = randomLoc + 2;
 
-var alreadyHit1 = false;
-var alreadyHit2 = false;
-var alreadyHit3 = false;
+let alreadyHit1 = false;
+let alreadyHit2 = false;
+let alreadyHit3 = false;
 
-var guess;
-var hits = 0;
-var guesses = 0;
+let guess;
+let hits = 0;
+let guesses = 0;
 
-var isSunk = false;
+let isSunk = false;
 
 while (isSunk == false) {
     guess = prompt("Enter a number 0-6");
@@ -67,7 +67,7 @@ while (isSunk == false) {
         }
     }
 
-var stats = "You took " + guesses + " guesses to sink the battleship, " + "accuracy was " + Math.floor((3/guesses)*100) + "%";
+let stats = "You took " + guesses + " guesses to sink the battleship, " + "accuracy was " + Math.floor((3/guesses)*100) + "%";
 alert(stats);
 
 
