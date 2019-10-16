@@ -31,5 +31,12 @@
 // console.log(a > b && c < d);
 // console.log(a < b || c > d);
 
-a = 5;
-console.log(a);
+let test4 = 3/1;
+console.log(test4);
+console.log(typeof test4);
+
+if (isNaN(test4)) {
+    console.log("it is really NaN");
+} else {
+    console.log("I'm a normal number");
+}
