@@ -31,12 +31,30 @@
 // console.log(a > b && c < d);
 // console.log(a < b || c > d);
 
-let test4 = 3/1;
-console.log(test4);
-console.log(typeof test4);
+// let test4 = 3/1;
+// console.log(test4);
+// console.log(typeof test4);
 
-if (isNaN(test4)) {
-    console.log("it is really NaN");
-} else {
-    console.log("I'm a normal number");
+// if (isNaN(test4)) {
+//     console.log("it is really NaN");
+// } else {
+//     console.log("I'm a normal number");
+// }
+let num = 51;
+
+switch (num) {
+	case num < 49:
+		console.log("wrong");
+		break;
+	case num > 100:
+		console.log("too much");
+		break;
+	case num = 50:
+		console.log("right");
+		break;
+	default:
+		console.log("nothing");
 }
+
+
+
