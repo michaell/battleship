@@ -13,49 +13,37 @@ let appData = {
 // let i = 0;
 // while (i < 2) {
 // 	i++;
-// 	console.log("beginning of the cycle, i = " + i);
 // 	let a = prompt("Enter the neccessary expense item for this month", ''),
 // 		b = +prompt("How much will it be?", '');	
 // 	if ((typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
 // 		console.log("done");
-// 		appData.expenses[a] = b;
-// 		console.log("success, i = " + i);
 // 	} else {
 // 		i--;
-// 		console.log("wrong, i = " + i);
 // 	}
 // }
 
 // let i = 0;
 // do {
 // 	i++;
-// 	console.log("beginning of the cycle, i = " + i);
 // 	let a = prompt("Enter the neccessary expense item for this month", ''),
 // 		b = +prompt("How much will it be?", '');
 	
 // 	if ((typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
 // 		appData.expenses[a] = b;
-// 		console.log(appData.expenses);
-// 		console.log("success, i = " + i);
 // 	} else {
 // 		i--;
-// 		console.log("wrong, i = " + i);
 // 	}	
 // }
 // while (i < 2);
 
 for (let i = 0; i < 2; i++) {
-	console.log("beginning of the cycle, i = " + i);
 	let a = prompt("Enter the neccessary expense item for this month", ''),
 		b = +prompt("How much will it be?", '');
 	
 	if ((typeof(a)) === 'string' && (typeof(a)) != null && (typeof(b)) != null && a != '' && b != '' && a.length < 50) {
 		appData.expenses[a] = b;
-		console.log(appData.expenses);
-		console.log("success, i = " + i);
 	} else {
 		i--;
-		console.log("wrong, i = " + i);
 	}	
 };
 
