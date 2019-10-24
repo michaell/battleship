@@ -129,8 +129,11 @@
 // }
 
 
-function calc(a, b) {
-	// return (a + b);
-}
+// function calc(a, b) {
+// 	// return (a + b);
+// }
 
-console.log(calc(3, 4));
+// console.log(calc(3, 4));
+
+console.log(typeof(true + false));
+console.log(4 + 5 + "px");
