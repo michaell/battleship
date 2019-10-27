@@ -135,5 +135,120 @@
 
 // console.log(calc(3, 4));
 
-console.log(typeof(true + false));
-console.log(4 + 5 + "px");
+// console.log(typeof(true + false));
+// console.log(4 + 5 + "px");
+
+// function first() {
+// 	setTimeout(function() {
+// 		console.log(1);
+// 	}, 5000 );
+// }
+
+// function second() {
+// 	console.log(2);
+// }
+
+// first();
+// second();
+
+// let person = {
+// 	name: "Misha",
+// 	weight: 88,
+// 	height: 182,
+// 	sex: "male"
+// }
+
+// for (let i in person) {
+// 	console.log(i + " " + person[i]);
+// }
+
+// console.log(person.name);
+
+// let a = " \t \n 2" - 2; 
+// console.log(a);
+// console.log(typeof(a)); 
+
+// let b = "1";
+// console.log(typeof(b));
+// console.log(+b);
+
+
+	// let a = 2;
+	// a++;
+	// console.log(a);
+	// // alert(a);
+
+// let counter = 1;
+// let a = counter++;
+
+// console.log(counter);
+
+// let a = (1 + 2, 3 + 4);
+// console.log(a);
+
+// let a = 1, b = 1;
+
+// let c = ++a;
+// let d = b++; 
+
+// console.log(c);
+// console.log(d);
+
+// let a = 2;
+
+// let x = 1 + (a *= 2);
+
+// console.log(x);
+
+// console.log(null === +"\n0\n");
+
+// console.log(Number(null));
+
+// let result = prompt("How old are you", "18");
+// console.log(result);
+
+
+// let age = prompt('Сколько вам лет?', '');
+
+// let accessAllowed = (age > 18) ?  false : true;
+
+// alert(accessAllowed);
+
+// let guess = prompt('What\'s the "официальное название" JavaScript?', '');
+
+// if (guess == "ECMAScript") {
+// 	console.log('That is true');
+// } else {
+// 	console.log('You don\'t know? “ECMAScript”!');
+// };
+
+// let guess = prompt("insert the number");
+
+// if (guess > 0) {
+// 	console.log(1);
+// } else if (guess < 0) {
+// 	console.log(-1);
+// } else {
+// 	console.log(0);
+// }
+
+// let result;
+
+// if (a + b < 4) {
+//   result = 'Мало';
+// } else {
+//   result = 'Много';
+// }
+
+// 
+let message = (login == 'Сотрудник') ? message = 'Привет' : (login == 'Директор') ? message = 'Здравствуйте'
+
+if (login == 'Сотрудник') {
+  message = 'Привет';
+} else if (login == 'Директор') {
+  message = 'Здравствуйте';
+} else if (login == '') {
+  message = 'Нет логина';
+} else {
+  message = '';
+}
