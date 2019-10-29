@@ -241,14 +241,65 @@
 // }
 
 // 
-let message = (login == 'Сотрудник') ? message = 'Привет' : (login == 'Директор') ? message = 'Здравствуйте'
+// let message = (login == 'Сотрудник') ? message = 'Привет' : (login == 'Директор') ? message = 'Здравствуйте'
 
-if (login == 'Сотрудник') {
-  message = 'Привет';
-} else if (login == 'Директор') {
-  message = 'Здравствуйте';
-} else if (login == '') {
-  message = 'Нет логина';
-} else {
-  message = '';
+// if (login == 'Сотрудник') {
+//   message = 'Привет';
+// } else if (login == 'Директор') {
+//   message = 'Здравствуйте';
+// } else if (login == '') {
+//   message = 'Нет логина';
+// } else {
+//   message = '';
+// }
+
+// console.log('ggfgdgfgd' || true);
+
+// console.log(Boolean(alert(1)));
+
+
+// if (age <= 14 && age <= 90) {
+
+// }
+
+// if (-1 || 0) alert( 'first' );
+// if (-1 && 0) alert( 'second' );
+// if (null || -1 && 1) alert( 'third' );
+
+// 
+
+// let guess = prompt("Who's there?");
+// if (guess == "admin") {
+// 	alert("Hello!");
+// } else if (guess == null || " ") {
+// 	alert("cancelled");
+// } else {
+// 	alert("I dont know you!");
+// };
+
+// let sum = 0;
+
+// while (true) {
+
+//   let value = +prompt("Введите число", '');
+
+//   if (!value) break; // (*)
+
+//   sum += value;
+
+// }
+// alert( 'Сумма: ' + sum );
+
+for (let i = 0; i < 3; i++) {
+
+	for (let j = 0; j < 3; j++) {
+  
+	  let input = prompt(`Значение на координатах (${i},${j})`, '');
+  
+	  
+  
+	}
+	console.log(i);
 }
+
+  alert('Готово!');
