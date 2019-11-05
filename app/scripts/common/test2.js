@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
  
 // console.log('test2');
 
@@ -406,3 +406,151 @@
 // 		alert('Вы ввели число 2, а может и 3');
 // 		break;
 // }
+
+// function functionName() {
+// 	let nick = "idiot";
+// 	return nick;
+// }
+
+// function showMessage(name, nickName = functionName()) {
+// 	console.log(name + nickName);
+// }
+
+// showMessage("Ivan ", "baran");
+
+// function checkAge(age) {
+// 	if (age > 18) {
+// 		return true;
+// 	}; 
+// 		return 'Родители разрешили?';
+	
+// }
+
+// // console.log(checkAge(16));
+
+// // function checkAge(age) {
+// // 	if (age > 18) {
+// // 	  	return true;
+// // 	} else {
+// // 	  	return confirm('Родители разрешили?');
+// // 	}
+// // }
+
+// // function checkAge(age) {
+// // 	(age > 18) ? true : confirm('Родители разрешили?');
+// // }
+
+// // function checkAge(age) {
+
+// // }
+
+// function getMinNumber(a, b) {
+// 	let minNumber = (a < b) ?  a : b;
+// 	return minNumber;
+// }
+
+// console.log(getMinNumber(3, -1));
+
+
+// function pow(x, n) {
+// 	let result = x;
+  
+// 	for (let i = 1; i < n; i++) {
+// 	  result *= x;
+// 	}
+  
+// 	return result;
+//   }
+  
+//   let x = prompt("x?", '');
+//   let n = prompt("n?", '');
+  
+//   if (n < 1) {
+// 	alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+//   } else {
+// 	alert( pow(x, n) );
+//   }
+
+// function sayHi() {
+// 	alert("hello");
+// }
+
+// alert(sayHi());
+
+	// function sayHi() {   // (1) создаём
+	// 	console.log( "Привет!!!!!" );
+	// }
+	
+	// let func = sayHi;    // (2) копируем
+
+	// func(); // Привет    // (3) вызываем копию (работает)!
+	// sayHi(); // Привет   //     прежняя тоже работает (почему бы нет)
+
+// function ask(question, yes, no) {
+// 	if (confirm(question)) {
+// 		yes(); 
+// 	} else no();		
+// }
+	
+// function showOk() {
+// 	alert( "Вы согласны." );
+// }
+	
+// function showCancel() {
+// 	alert( "Вы отменили выполнение." );
+// }
+	
+// // использование: функции showOk, showCancel передаются в качестве аргументов ask
+// ask("Вы согласны?", showOk, showCancel);
+
+
+
+
+// let age = prompt("Сколько Вам лет?", 18);
+
+// в зависимости от условия объявляем функцию
+// if (age < 18) {
+
+//   function welcome() {
+//     alert("Привет!");
+// }
+
+// } else {
+
+//   function welcome() {
+//     alert("Здравствуйте!");
+// 	}
+
+// }
+
+// // ...не работает
+// welcome(); // Error: welcome is not defined
+
+// let age = prompt("Сколько Вам лет?", 18);
+
+// let welcome;
+// console.log("1. wellcome = " + welcome);
+
+// if (age < 18) {
+
+// 	welcome = function() {
+// 		alert("Привет!");
+// 	};
+	
+// } else {
+
+//   welcome = function() {
+//     alert("Здравствуйте!");
+//   };
+
+// }
+
+// welcome();
+
+
+let a = function() {
+	let b = "string";
+	return b;
+}
+
+a()
