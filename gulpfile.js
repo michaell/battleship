@@ -79,7 +79,13 @@ const isDevelopment = true;
 let moduleJs = [
 	'app/scripts/common/test1.js',
 	'app/scripts/common/test2.js',
-	'app/scripts/common/homework.js'
+	'app/scripts/common/test3.js',
+	'app/scripts/common/linter.js'
+	// 'app/scripts/common/homework.js',
+	// 'app/scripts/common/scissors.js',
+	// 'app/scripts/common/sleepDebt.js',
+	// 'app/scripts/common/crefitCards.js'
+
 	// 'app/scripts/common/battleship.js'
 ];
 

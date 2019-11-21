@@ -453,104 +453,320 @@
 
 
 // function pow(x, n) {
-// 	let result = x;
+// // 	let result = x;
   
-// 	for (let i = 1; i < n; i++) {
-// 	  result *= x;
-// 	}
+// // 	for (let i = 1; i < n; i++) {
+// // 	  result *= x;
+// // 	}
   
-// 	return result;
+// // 	return result;
+// //   }
+  
+// //   let x = prompt("x?", '');
+// //   let n = prompt("n?", '');
+  
+// //   if (n < 1) {
+// // 	alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+// //   } else {
+// // 	alert( pow(x, n) );
+// //   }
+
+// // function sayHi() {
+// // 	alert("hello");
+// // }
+
+// // alert(sayHi());
+
+// 	// function sayHi() {   // (1) создаём
+// 	// 	console.log( "Привет!!!!!" );
+// 	// }
+	
+// 	// let func = sayHi;    // (2) копируем
+
+// 	// func(); // Привет    // (3) вызываем копию (работает)!
+// 	// sayHi(); // Привет   //     прежняя тоже работает (почему бы нет)
+
+// // function ask(question, yes, no) {
+// // 	if (confirm(question)) {
+// // 		yes(); 
+// // 	} else no();		
+// // }
+	
+// // function showOk() {
+// // 	alert( "Вы согласны." );
+// // }
+	
+// // function showCancel() {
+// // 	alert( "Вы отменили выполнение." );
+// // }
+	
+// // // использование: функции showOk, showCancel передаются в качестве аргументов ask
+// // ask("Вы согласны?", showOk, showCancel);
+
+
+
+
+// // let age = prompt("Сколько Вам лет?", 18);
+
+// // в зависимости от условия объявляем функцию
+// // if (age < 18) {
+
+// //   function welcome() {
+// //     alert("Привет!");
+// // }
+
+// // } else {
+
+// //   function welcome() {
+// //     alert("Здравствуйте!");
+// // 	}
+
+// // }
+
+// // // ...не работает
+// // welcome(); // Error: welcome is not defined
+
+// // let age = prompt("Сколько Вам лет?", 18);
+
+// // let welcome;
+// // console.log("1. wellcome = " + welcome);
+
+// // if (age < 18) {
+
+// // 	welcome = function() {
+// // 		alert("Привет!");
+// // 	};
+	
+// // } else {
+
+// //   welcome = function() {
+// //     alert("Здравствуйте!");
+// //   };
+
+// // }
+
+// // welcome();
+
+
+// // let a = function() {
+// // 	let b = "string";
+// // 	return b;
+// // }
+
+// // a()
+
+// // console.log(Math.random() * 50);
+// // console.log(Math.floor(20.99999));
+
+// // let a = 2;
+// // console.log(++a);
+// // console.log(a);
+
+
+// // let a = 3;
+// // let b = 4;
+// // let c = a;
+
+// // console.log(c);
+
+// // a = b;
+// // b = c;
+// // console.log(c);
+
+// // console.log(b);
+
+// // let sale = '';
+// // if (sale) {
+// //   console.log('Time to buy!');
+// // } else {
+// // 	console.log('No');
+// // }
+
+// // if (true) {
+// // 	console.log('The code in this block will not run.');
+// //   } else {
+// // 	console.log('But the code in this block will!');
+// // }
+
+// // let myVariable = '';
+// // if (myVariable) {
+// //    console.log(myVariable)
+// // } else {
+// //    console.log('The variable does not exist.')
+// // }
+
+// // let defaultName;
+// // if (username) {
+// //   defaultName = username;
+// // } else {
+// // //   defaultName = 'Stranger';
+// // }
+
+
+// // console.log(defaultName);
+
+// let a = 1;
+// let b = 2;
+
+// switch (a, b) {
+// 	case 3, 4: 
+// 		console.log('true');
+// 	break;
+// 	case 1, 3: 
+// 		console.log('false');
+// 	break;
+// 	default:
+// 		console.log('smg else');
+// }
+
+// let c;
+
+// console.log(Boolean(c));
+
+
+// function defaultFunction() {
+// 	console.log('default text');
+// };
+
+// function showText(text = defaultFunction()) {
+// 	console.log('some text');
+// }
+
+// showText();
+
+// const func = number => number++;
+
+// console.log(func(10));
+
+// function a() {
+// 	return 1;
 //   }
-  
-//   let x = prompt("x?", '');
-//   let n = prompt("n?", '');
-  
-//   if (n < 1) {
-// 	alert(`Степень ${n} не поддерживается, используйте натуральное число`);
-//   } else {
-// 	alert( pow(x, n) );
-//   }
+//   const b = a();
+//   console.log(b);
 
-// function sayHi() {
-// 	alert("hello");
-// }
-
-// alert(sayHi());
-
-	// function sayHi() {   // (1) создаём
-	// 	console.log( "Привет!!!!!" );
-	// }
-	
-	// let func = sayHi;    // (2) копируем
-
-	// func(); // Привет    // (3) вызываем копию (работает)!
-	// sayHi(); // Привет   //     прежняя тоже работает (почему бы нет)
-
-// function ask(question, yes, no) {
-// 	if (confirm(question)) {
-// 		yes(); 
-// 	} else no();		
-// }
-	
-// function showOk() {
-// 	alert( "Вы согласны." );
-// }
-	
-// function showCancel() {
-// 	alert( "Вы отменили выполнение." );
-// }
-	
-// // использование: функции showOk, showCancel передаются в качестве аргументов ask
-// ask("Вы согласны?", showOk, showCancel);
-
-
-
-
-// let age = prompt("Сколько Вам лет?", 18);
-
-// в зависимости от условия объявляем функцию
-// if (age < 18) {
-
-//   function welcome() {
-//     alert("Привет!");
-// }
-
-// } else {
-
-//   function welcome() {
-//     alert("Здравствуйте!");
+//   function order(number, flavor) {
+// 	if (number === 1) {
+// 	  return `Lemme get ${number} scoop of ${flavor}!`
+// 	} else if (number > 1) {
+// 	   return `Lemme get ${number} scoops of ${flavor}!`
 // 	}
-
 // }
 
-// // ...не работает
-// welcome(); // Error: welcome is not defined
+// console.log(order(1, 'vanilla'));
+// order(3, 'chocolate');
 
-// let age = prompt("Сколько Вам лет?", 18);
 
-// let welcome;
-// console.log("1. wellcome = " + welcome);
-
-// if (age < 18) {
-
-// 	welcome = function() {
-// 		alert("Привет!");
+// const getUserChoice = userInput => {
+  
+// 	userInput = userInput.toLowerCase();
+	
+// 	switch (userInput) {
+// 	  case 'rock':
+// 		return userInput;
+// 	  case 'paper':
+// 		return userInput;
+// 	  case 'scissors':
+// 		return userInput;
+// 	  default:
+// 	   console.log('Wrong input!') 
 // 	};
 	
-// } else {
+//   }
+  
+//   console.log(getUserChoice('scsors'));
 
-//   welcome = function() {
+
+
+// let word = 'dehidration';
+// for (let i = 0 ; i < word.length; i++) {
+// 	console.log(word[i]);
+// }
+
+// console.log(word.length);
+
+// let arr = ['ass', 'dumb', 'pussy'];
+// const arr1 = ['valid1', 'valid2', 'valid3', 'valid4', 'valid5', 'invalid1', 'invalid2', 'invalid3', 'invalid4', 'invalid5', 'mystery1', 'mystery2', 'mystery3', 'mystery4', 'mystery5'];
+
+
+// let arrthrough = (arry) => {
+// 	for (let i = 0; i < arry.length; i++) {
+// 		console.log(arry[i]);
+// 	}
+// }
+
+// arrthrough(arr1);
+
+// const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+// console.log(words.some((element) => {
+//   return element.length < 6;
+// }));
+
+const words = ['unique', 'uncanny', 'pique', 'oxymoron', 'guise'];
+
+// Something is missing in the method call below
+
+// console.log(words.some((elements) => {
+//   return elements.length < 6;
+// }));
+
+
+// let word1 = 'ass';
+// console.log(word1.length);
+
+// const cities = ['Orlando', 'Dubai', 'Edinburgh', 'Chennai', 'Accra', 'Denver', 'Eskisehir', 'Medellin', 'Yokohama'];
+
+// //  Choose a method that will return undefined
+// console.log(cities.forEach(city => console.log('Have you visited ' + city + '?')));
+
+// console.log(printInConsole());
+
+
+// function printInConsole() {
+// 	console.log('Hello');
+// }
+
+// console.log(printInConsoleTwice());
+
+
+// let printInConsoleTwice = () => {
+// 	console.log('Hello twice');
+// };
+
+
+
+// function ask(question, yes, no) {
+// 	confirm(question) ? yes() : no();
+// }
+
+// function showOk() {
+// 	alert('You\'ve agreed');
+// }
+
+// function chancel() {
+// 	alert('You didn\'t agreed');
+// }
+
+// ask('Are you agree?', showOk, chancel);
+
+
+
+// let age = prompt("Сколько Вам лет?", 18);
+
+// // в зависимости от условия объявляем функцию
+// if (age < 18) {
+// 	welcome();
+//   function welcome() {
+//     alert("Привет!");
+//   }
+
+// } else {
+// 	welcome();
+//   function welcome() {
 //     alert("Здравствуйте!");
-//   };
+//   }
 
 // }
 
-// welcome();
-
-
-let a = function() {
-	let b = "string";
-	return b;
-}
-
-a()
+// ...не работает
+ // Error: welcome is not defined
