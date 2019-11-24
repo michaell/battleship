@@ -8,45 +8,4 @@ let unnecessaryWords = ['extremely', 'literally', 'actually' ];
 
 let storyWords = story.split(' ');
 
-
-let betterWords = storyWords.filter(word => {
-    for (let i = 0; i < unnecessaryWords.length; i++) {
-        if (word === unnecessaryWords[i]) {
-            return false;
-      }
-    }
-    return true;
-});
-
-let numberOfOverused = (storyWordsArr, overusedWordsArr) => {
-	let number = 0;
-	for (let i = 0; i < storyWordsArr.length; i++) {
-		for (let j = 0; j < overusedWordsArr.length; j++) {
-			if (storyWordsArr[i] === overusedWordsArr[j]) {
-				number += 1;
-			}
-		}
-	}
-	return number;
-};
-
-let num = 0;
-let numberOfSentences = storyWords.forEach(item => {
-	for (let i = 0; i < item.length; i++) {
-		if (item[i] === '.' || item[i] === '!') {
-			num = num + 1;
-		}
-	}
-});
-
-
-
-console.log(`It is ${storyWords.length} words are used.`);
-console.log(`Number of sentences is ${num}.`);
-console.log(`You used overused words ${numberOfOverused(storyWords, overusedWords)} times in your text.`);
-console.log(betterWords.join(' '));
-
-
-
-
-
+console.log(storyWords);
